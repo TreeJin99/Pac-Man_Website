@@ -1,0 +1,108 @@
+* {
+	list-style: none;
+	text-decoration: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	color: white;
+	font-family: DungGeunMo;
+}
+
+@font-face {
+	font-family: 'DungGeunMo';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.mypage-container {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+}
+
+.header {
+	display: flex;
+	margin: auto;
+	width: 90%;
+}
+
+.above-nav {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	text-align: center;
+	margin-left: 27vh;
+	font-size: 5vh;
+	margin-top: 1.5vh;
+}
+
+.above-nav li {
+	margin-left: 15vh;
+	margin-right: 15vh;
+}
+
+.home {
+	width: 8.5vh;
+	filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.user {
+	width: 7.5vh;
+	filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.signout {
+	width: 8vh;
+	filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.userinfo-container {
+	margin: auto;
+	width: 60%;
+	height: 75vh;
+}
+
+.userinfo-title {
+	margin-top: 3vh;
+	font-size: 2rem;
+	color: yellow;
+	font-family: DungGeunMo;
+}
+
+.userinfo {
+	text-align: left;
+	margin-top: 1vh;
+	width: 100%;
+	height: 90%;
+	border-top: 3px solid #dddddd;
+}
+
+th {
+	font-size: 2rem;
+	border-bottom: 1px solid #dddddd;
+}
+
+td {
+	font-size: 2rem;
+	border-bottom: 1px solid #dddddd;
+}
+
+.userinfo col:nth-child(1) {
+	width: 35%;
+}
+
+.back-button {
+	margin-left: 175vh;
+	width: 15vh;
+	height: 5vh;
+	font-size: 3vh;
+	border-radius: 1vh;
+	background-color: black;
+	border: 1px solid #dddddd;
+}

@@ -1,0 +1,97 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  color: #696969;
+}
+
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.login-container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 200vh;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+}
+
+.title {
+  font-family: neon;
+  font-style: oblique;
+  color: #E32769;
+  font-size: 8vh;
+  text-shadow: 0 0 3vw #F40A35;
+  margin-bottom: 5vh;
+}
+
+.title {
+  animation: neon 2s ease infinite;
+  -moz-animation: neon 2s ease infinite;
+  -webkit-animation: neon 2s ease infinite;
+  -o-animation: neon 2s linear infinite;
+}
+
+
+.username input {
+  margin-top: 20px;
+  width: 600px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 50px;
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.password input {
+  margin-top: 5px;
+  width: 600px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 50px;
+  background-color: #D3D3D3;
+  color: black;
+}
+
+.signin input {
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 255px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.signup{
+  margin-top: 3px;
+  width: 100px;
+  height: 25px;
+  font-size: 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+@keyframes neon {
+
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}

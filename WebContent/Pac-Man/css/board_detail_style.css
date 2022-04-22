@@ -1,0 +1,136 @@
+* {
+	list-style: none;
+	text-decoration: none;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	color: white;
+	font-family: DungGeunMo;
+	border-radius: 15px;
+}
+
+@font-face {
+	font-family: 'DungGeunMo';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: black;
+}
+
+#write-container {
+	display: grid;
+	grid-template-areas: 'header header header' 'left   main  main'
+		'footer footer footer';
+	grid-template-columns: 15vw 85vw 0vw;
+}
+
+#header {
+	grid-area: header;
+	padding-top: 3vh;
+	font-size: 4em;
+	margin-bottom: 3vh;
+	text-align: center;
+}
+
+#left {
+	grid-area: left;
+}
+
+.left-nav {
+	width: 30vh;
+	font-size: 3vh;
+	padding: 1.5vh;
+	border-radius: 10px;
+	border: 3px solid white;
+}
+
+.left-nav-title {
+	font-size: 4vh;
+	text-align: center;
+}
+
+.home {
+	width: 5vh;
+	filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.user {
+	width: 5vh;
+	filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.signout {
+	width: 5vh;
+	filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+#main {
+	grid-area: main;
+	width: 90%;
+	margin-left: 6vh;
+}
+
+.board_table {
+	width: 90%;
+	border: 3px solid white;
+	border-radius: 10px;
+	font-size: 2rem;
+}
+
+.board-content {
+	margin: 15vh;
+	height: 55vh;
+	font-size: 2rem;
+	color: black;
+	resize: none;
+}
+
+.board_title{
+	font-size: 2rem;
+	color: black;
+}
+
+.board_table tr>td:nth-child(odd) {
+	height: 10vh;
+	width: 8vw;
+	padding-left: 2vw;
+}
+
+.board_table input {
+	width: 92%;
+	height: 8vh;
+	font-size: 2rem;
+	color: black;
+}
+
+.board_table textarea {
+	margin-top: 1vh;
+	width: 92%;
+	height: 55vh;
+	font-size: 2rem;
+	color: black;
+	resize: none;
+}
+
+.input-button {
+	text-align: right;
+	margin-right: 10%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+.input-button>input {
+	background-color: black;
+	font-size: 1.7rem;
+	color: white;
+	width: 15vw;
+	height: 4vh;
+	border-radius: 10px;
+	border: 3px solid white;
+}

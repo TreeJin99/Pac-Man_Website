@@ -1,0 +1,183 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  color: white;
+  font-family: DungGeunMo;
+}
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+
+.above-nav {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin-left: 27vh;
+  font-size: 5vh;
+  margin-top: 1.5vh;
+}
+
+.above-nav li {
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+
+.home {
+  width: 8.5vh;
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.user {
+  width: 7.5vh;
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.signout {
+  width: 8vh;
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.body {
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 1.5vh;
+  width: 95%;
+}
+
+.packman {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 25vh;
+  height: 25vh;
+  margin-top: 3vh;
+}
+
+.footer {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  height: 20vh;
+}
+
+.below-nav {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 4vh;
+  margin-left: 27vh;
+}
+
+.below-nav li {
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.game {
+  width: 13vh;
+  height: 13vh;
+}
+
+.about {
+  width: 13vh;
+  height: 13vh;
+}
+
+.board {
+  width: 13vh;
+  height: 13vh;
+}
+
+.offical {
+  width: 13vh;
+  height: 13vh;
+}
+
+.neon-text {
+  text-align: center;
+}
+
+.neon {
+  font-family: neon;
+  font-style: oblique;
+  color: #E32769;
+  font-size: 13vh;
+  text-shadow: 0 0 3vw #F40A35;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  font-size: 15vh;
+  /* line-height: 9vw; */
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+  animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
